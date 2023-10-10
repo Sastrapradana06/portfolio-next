@@ -73,7 +73,7 @@ export default function ProjectView() {
               </div>
               <div className="h-[50%] p-1 flex flex-col justify-around items-center">
                 <div className="max-w-[100%] h-[80%] flex  flex-col gap-2  p-1" id="deskripsi">
-                  <p className="text-[.7rem] text-[#9d9b9b]">"{data.deskripsi}".</p>
+                  <p className="text-[.7rem] text-[#9d9b9b]">{data.deskripsi}.</p>
                   <div className="flex gap-2 items-center flex-wrap">
                     {data.tech.map((data, i) => {
                       return (
