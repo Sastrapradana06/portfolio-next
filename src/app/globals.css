@@ -1,27 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&family=Roboto&family=Signika+Negative&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background-color: rgb(42, 41, 41); */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+#font1 {
+  font-family: 'Kanit', sans-serif;
+}
+
+#link:hover{
+  box-shadow: 1px 1px 10px teal;
+  transition: all .3s;
+}
+
+.material-symbols-outlined {
+  color: rgb(39, 155, 208);
+}
+
+.tes {
+  color: rgb(125, 122, 122);
+  background-color: rgba(255, 255, 255, 0.116);
+}
+
+#color-gray {
+  color: rgb(212, 209, 209);
+}
+
+#sosmed {
+  transition: all .4s;
+}
+
+#sosmed:hover {
+  transform: translateY(-10px);
+}
+
+#btn_detail:hover {
+  /* transform: scale(1.1); */
+  transition: all .4s;
+  border: none;
+  border-bottom: 1px solid white;
+  /* border-radius: 0; */
+}
+
+
+body {
+  background: radial-gradient(111% 111% at 74.29% -11%, #A93300 0%, #005570 100%), linear-gradient(127.43deg, #00D5C8 0%, #2200AA 100%);
+  background-blend-mode: difference, normal;
 }
