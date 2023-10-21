@@ -1,9 +1,8 @@
 "use client"
 
 import Link from "next/link";
-import { RiVerifiedBadgeLine, RiVerifiedBadgeFill } from "react-icons/ri";
+import {RiVerifiedBadgeFill } from "react-icons/ri";
 import { TypeAnimation } from 'react-type-animation';
-import imageHome from '../img/imageHome.jpg'
 import imageProfil1 from '@/img/imageProfil1.jpg'
 import Image from "next/image";
 

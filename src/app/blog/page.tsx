@@ -1,8 +1,7 @@
 import AppShell from "@/components/AppShell/AppShell";
 import Navbar from "@/components/navbar/Navbar";
-import Image from "next/image";
-import Link from "next/link";
 import BlogView from "./BlogView";
+
 
 
 export default function BlogPage() {

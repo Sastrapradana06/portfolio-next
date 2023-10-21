@@ -3,11 +3,14 @@ import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { SiTailwindcss, SiCss3, SiJavascript, SiRedux, SiMongodb, SiNextdotjs } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 
+interface SkillViewProps {
+  aos: string,
+  delay: string
+}
 
 
 
-
-export default function SkillView() {
+export default function SkillView({ aos, delay }: SkillViewProps){
   const listSkill = [
     {
       name: "HTML",
@@ -53,8 +56,9 @@ export default function SkillView() {
       icons: <AiFillGithub fill="white" size="30"/>,
     },
   ];
+
   return (
-    <div className="border mt-1 w-full h-max p-2 rounded-lg flex flex-wrap items-center justify-center gap-4 backdrop-blur-[5px] bg-[#fffdfd17]  ">
+    <div className="border mt-1 w-full h-max p-2 rounded-lg flex flex-wrap items-center justify-center gap-4 backdrop-blur-[5px] bg-[#fffdfd17]  " data-aos={aos} data-aos-delay={delay}>
       {listSkill.map((data, i) => {
         return (
           <div className="w-[150px] h-[50px] flex gap-2 justify-center items-center border bg-[#2d2c2c]" key={i}>

@@ -1,3 +1,5 @@
+'use client'
+
 import scatterImg from '@/img/scatterImg.png'
 import catatankuImg from '@/img/catatankuImg.png'
 import komangImg from '@/img/komangImg.jpg'
@@ -7,9 +9,17 @@ import Image from 'next/image'
 import { FiGithub } from "react-icons/fi";
 import { GoLinkExternal } from "react-icons/go";
 import Link from 'next/link'
+import { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 export default function ProjectView() {
 
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    })
+  }, [])
 
   const listProject = [
     {
@@ -55,10 +65,10 @@ export default function ProjectView() {
   ]
 
   return (
-    <div className="w-full h-max border rounded-lg flex flex-wrap flex-col  items-center justify-center gap-6 backdrop-blur-[5px] bg-[#fffdfd17] lg:flex-row  lg:gap-3 p-3 mb-4">
+    <div className="w-full h-max rounded-lg flex flex-wrap flex-col  items-center justify-center gap-6 backdrop-blur-[5px] bg-[#fffdfd17] lg:flex-row  lg:gap-3 p-3 mb-4">
       {listProject.map((data, i) => {
           return (
-            <div className="w-[90%] h-[310px]  border-[#2ec6af]  bg-[#313030] flex flex-col lg:w-[30%] lg:h-[330px] rounded-xl" key={i}>
+            <div className="w-[90%] h-[310px] border border-white  bg-[#313030] flex flex-col lg:w-[30%] lg:h-[330px] rounded-xl hover:animate-pulse" key={i} data-aos="zoom-in" data-aos-duration="800">
               <div className="w-full h-[60%] flex items-center justify-center" id="image">
                 <Image
                   className='w-[90%] h-[90%] m-auto object-cover rounded-xl border-2'
