@@ -3,6 +3,7 @@
 import scatterImg from '@/img/scatterImg.png'
 import catatankuImg from '@/img/catatankuImg.png'
 import komangImg from '@/img/komangImg.jpg'
+import dompetku from '@/img/dompetku.png'
 import kuychatImg from '@/img/kuychatImg.png'
 import portfolioImg from '@/img/portfolioImg.png'
 import Image from 'next/image'
@@ -47,19 +48,19 @@ export default function ProjectView() {
       tech: ['React Js', 'Tailwind', 'Zustand']
     },
     {
-      img: kuychatImg,
-      name: 'KuyChat.App',
-      deskripsi: 'We can create a chat group so we can communicate with each other easily',
-      demo: 'https://kuy-chat.netlify.app/',
-      gitHub: 'https://github.com/Sastrapradana06/realtime-chat-app',
-      tech: ['React Js', 'Tailwind', 'Node Js', 'Mongo Db']
+      img: dompetku,
+      name: 'Dompetku.App',
+      deskripsi: 'Dompetku is a specially designed financial management platform to assist you in meticulously organizing your expenses and income, providing a clear overview of your financial health.',
+      demo: 'https://dompetku66.vercel.app/',
+      gitHub: 'https://github.com/Sastrapradana06/Dompetku',
+      tech: ['Next Js', 'Zustand', 'Firebase']
     },
     {
       img: portfolioImg,
       name: 'Portfolio.App',
       deskripsi: 'Apart from my personal portfolio, I created this website with the aim of practicing my understanding of next js',
       demo: 'https://portfolio-next.netlify.app/',
-      gitHub: 'https://github.com/Sastrapradana06/portfolio-next',
+      gitHub: 'https://github.com/Sastrapradana06/firebase-auth',
       tech: ['Next Js', 'Tailwind']
     },
   ]
