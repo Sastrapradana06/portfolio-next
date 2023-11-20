@@ -61,7 +61,7 @@ export default function SkillView({ aos, delay }: SkillViewProps){
     <div className="border mt-1 w-full h-max p-2 rounded-lg flex flex-wrap items-center justify-center gap-4 backdrop-blur-[5px] bg-[#fffdfd17]  " data-aos={aos} data-aos-delay={delay}>
       {listSkill.map((data, i) => {
         return (
-          <div className="w-[150px] h-[50px] flex gap-2 justify-center items-center border bg-[#2d2c2c]" key={i}>
+          <div className="w-[130px] h-[50px] flex gap-2 justify-center items-center border bg-[#2d2c2c] lg:w-[150px]" key={i}>
             {data.icons}
             <p className="text-[.8rem]">{data.name}</p>
           </div>
