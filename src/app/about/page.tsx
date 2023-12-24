@@ -40,8 +40,8 @@ export default function AboutPage() {
                 <span className="w-[35px] border-b h-[13px]"></span>
                 <p className="text-[.9rem]" >About me</p>
               </div>
-              <div className="border w-full h-[110px] p-2 mt-1 rounded-lg flex items-center backdrop-blur-[5px] bg-[#ffffff11]" data-aos="zoom-in" data-aos-delay="500">
-                <p className="text-[.8rem] text-[#dfdada] lg:text-[.9rem]">Haii, My name is Sastra Pradana from Medan. I am a student with an interest in Front End Development, I enjoy working in a team to come up with creative solutions that can improve the overall user experience</p>
+              <div className="border w-full h-max p-2 mt-1 rounded-lg flex items-center backdrop-blur-[5px] bg-[#ffffff11]" data-aos="zoom-in" data-aos-delay="500">
+                <p className="text-[.8rem] text-[#dfdada] lg:text-[.9rem]" >Haii, My name is Sastra Pradana from Medan. I am a student with an interest in Front End Development, I enjoy working in a team to come up with creative solutions that can improve the overall user experience</p>
               </div>
             </div>
             <div className="mt-5" id="skill">
@@ -54,5 +54,6 @@ export default function AboutPage() {
           </div>
         </div>
     </AppShell>
+
   )
 };

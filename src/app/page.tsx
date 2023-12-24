@@ -13,6 +13,10 @@ import { AiFillAlert } from "react-icons/ai";
 import { FaBloggerB } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
 
+
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({subsets: ['latin']})
+
 export default function Home() {
 
   return (
@@ -28,9 +32,9 @@ export default function Home() {
         </div>
         <div className=" text-center">
           <div className="flex items-center gap-1 justify-center">
-            <h1 className="text-[1.2rem]">Sastra Pradana</h1>
+            <h1 className={`${montserrat.className} font-medium`}>Sastra Pradana</h1>
             <RiVerifiedBadgeFill fill="rgb(39, 155, 208)" size="20"/>
-            <Link href={"/"}>
+            <Link href={"https://github.com/Sastrapradana06"}>
               <VscGithubAlt size="20"/>
             </Link>
           </div>
@@ -45,31 +49,30 @@ export default function Home() {
             </span>
           </h1>
         </div>
-        <div className="w-[230px] min-h-max max-h-max rounded-lg flex flex-col">
-          <div className="w-[100%] h-[50px]">
-            <Link href={'/'} className="w-[100%] flex justify-center items-center p-1 m-auto border-[3px] gap-[10px]">
+        <div className="w-[300px] h-max flex justify-center items-center gap-[20px]">
+          <div className="w-max h-max p-2 rounded-lg border cursor-pointer hover:-translate-y-2 duration-200">
+            <Link href={'/'} className="">
               <MdHome size="25" color="teal"/>
-              <h1>Home</h1>
             </Link>
           </div>
-          <div className="w-[100%] h-[50px] flex justify-center items-center p-1 gap-[10px]">
-            <Link href={'/about'} className="w-[50%] flex justify-center items-center p-1 m-auto border-[3px] gap-[10px]">
-              <IoPerson  size="25" color="teal"/>
-              <h1>About</h1>
-            </Link>
-            <Link href={'/project'} className="w-[50%] flex justify-center items-center p-1 m-auto border-[3px] gap-[10px]">
-              <FaBloggerB size="25" color="teal"/>
-              <h1>Blog</h1>
+          <div className="w-max h-max p-2 rounded-lg border cursor-pointer hover:-translate-y-2 duration-200">
+            <Link href={'/about'} className="">
+              <IoPerson size="25" color="teal"/>
             </Link>
           </div>
-          <div className="w-[100%] h-[50px] flex justify-center items-center p-1 gap-[10px]">
-            <Link href={'/blog'} className="w-[50%] flex justify-center items-center p-1 m-auto border-[3px] gap-[10px]">
+          <div className="w-max h-max p-2 rounded-lg border cursor-pointer hover:-translate-y-2 duration-200">
+            <Link href={'/project'} className="">
               <AiFillAlert size="25" color="teal"/>
-              <h1>Project</h1>
             </Link>
-            <Link href={'/contact'} className="w-[50%] flex justify-center items-center p-1 m-auto border-[3px] gap-[10px]">
+          </div>
+          <div className="w-max h-max p-2 rounded-lg border cursor-pointer hover:-translate-y-2 duration-200">
+            <Link href={'/blog'} className="">
+              <FaBloggerB size="25" color="teal"/>
+            </Link>
+          </div>
+          <div className="w-max h-max p-2 rounded-lg border cursor-pointer hover:-translate-y-2 duration-200">
+            <Link href={'/contact'} className="">
               <IoIosCall size="25" color="teal"/>
-              <h1>Contact</h1>
             </Link>
           </div>
         </div>

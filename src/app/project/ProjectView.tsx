@@ -14,6 +14,9 @@ import { useEffect } from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({subsets: ['latin']})
+
 export default function ProjectView() {
 
   useEffect(() => {
@@ -66,10 +69,10 @@ export default function ProjectView() {
   ]
 
   return (
-    <div className="w-full h-max rounded-lg flex flex-wrap flex-col  items-center justify-center gap-6 backdrop-blur-[5px] bg-[#fffdfd17] lg:flex-row  lg:gap-3 p-3 mb-4">
+    <div className={`${montserrat.className} w-full h-max rounded-lg flex flex-wrap flex-col  items-center justify-center gap-6 lg:flex-row  lg:gap-3 p-3 mb-4`}>
       {listProject.map((data, i) => {
           return (
-            <div className="w-[90%] h-[310px] border border-white  bg-[#313030] flex flex-col lg:w-[30%] lg:h-[330px] rounded-xl hover:animate-pulse" key={i} data-aos="zoom-in" data-aos-duration="800">
+            <div className="w-[90%] h-[310px] border border-white backdrop-blur-[5px] bg-[#fffdfd17] flex flex-col lg:w-[30%] lg:h-[330px] rounded-xl hover:animate-pulse" key={i} data-aos="zoom-in" data-aos-duration="800">
               <div className="w-full h-[60%] flex items-center justify-center" id="image">
                 <Image
                   className='w-[90%] h-[90%] m-auto object-cover rounded-xl border-2'
@@ -84,11 +87,11 @@ export default function ProjectView() {
               </div>
               <div className="h-[50%] p-1 flex flex-col justify-around items-center">
                 <div className="max-w-[100%] h-[80%] flex  flex-col gap-2  p-1" id="deskripsi">
-                  <p className="text-[.7rem] text-[#9d9b9b]">{data.deskripsi}.</p>
+                  <p className="text-[.7rem] text-[white]">{data.deskripsi}.</p>
                   <div className="flex gap-2 items-center flex-wrap">
                     {data.tech.map((data, i) => {
                       return (
-                        <p className='text-[.7rem] border px-2 rounded-lg ' key={i}>{data}</p>
+                        <p className='text-[.8rem] text-[#7fdbff] font-blod' key={i}>#{data}</p>
                       )
                     })}
                   </div>
@@ -108,3 +111,5 @@ export default function ProjectView() {
     </div>
   )
 };
+
+// backdrop-blur-[5px] bg-[#fffdfd17]
