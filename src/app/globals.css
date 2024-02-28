@@ -58,7 +58,6 @@ body {
 
 
 body {
-  /* background: radial-gradient(111% 111% at 74.29% -11%, #A93300 0%, #005570 100%), linear-gradient(127.43deg, #00D5C8 0%, #2200AA 100%);
-  background-blend-mode: difference, normal; */
-  background: linear-gradient(55deg, #212121 0%, #212121 40%, #323232 calc(40% + 1px), #323232 60%, #008F95 calc(60% + 1px), #008F95 70%, #323232 calc(70% + 1px), #323232 100%);
+  /* background: linear-gradient(55deg, #212121 0%, #212121 40%, #323232 calc(40% + 1px), #323232 60%, #008F95 calc(60% + 1px), #008F95 70%, #323232 calc(70% + 1px), #323232 100%); */
+  background-color: black;
 }
